@@ -7,7 +7,8 @@ through their pool pointer offset.
 </div>
 
 ### Support
-ARM64, ARM libs
+ARM64, ARM libs  
+Host runtime support: Debian 11 amd64/x64 (full)
 
 ### Requierements
 Python3
@@ -21,6 +22,9 @@ pip install --user pptool-2.0-py3-none-any.whl
 ### Usage
 #### from CLI<br>
 pptool [-h] [-v] [-c] [-d] [-s] [-j] libapp offset [offset ...]
+
+#### single-file script (Debian 11 amd64/x64 friendly)<br>
+python3 pptool_single.py [-h] [-v] [-c] [-d] [-s] [-j] libapp offset [offset ...]
 
 #### positional arguments<br>
 <strong>libapp</strong>:
@@ -55,4 +59,3 @@ full output in JSON format<br>
 \>\>\> print(spl)<br>
 \>\>\> jsn = ppt.json()<br>
 ...
-
