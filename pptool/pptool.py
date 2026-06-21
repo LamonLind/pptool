@@ -22,11 +22,11 @@ from typing import NamedTuple
 from re import findall
 
 
-class Match[T](NamedTuple):
+class Match(NamedTuple):
     address: str
     register: int
     function: str
-    assembly: T
+    assembly: bytes
 
 
 class PPTool:
